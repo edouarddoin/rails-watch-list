@@ -1,0 +1,14 @@
+<%= @list.movies.each do |movie| %>
+<ul>
+  <li><%= movie.title %></li>
+  <li><%= movie.poster_url %></li>
+  <li><%= movie.rating %></li>
+  <li><%= movie.overview %></li>
+</ul>
+<% end %>
+<div>
+  <%= link_to "Back to list page", lists_path %>
+</div>
+<div>
+    <%= link_to "new bookmark", new_list_bookmark_path %>
+</div>

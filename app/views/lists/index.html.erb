@@ -1,0 +1,11 @@
+<div class="container mt-3">
+  <h1>List</h1>
+  <div id="list">
+    <% @lists.each do |list| %>
+    <ul><%=list.name%></ul>
+    <%=link_to "Edit list", list_path(list.id)%>
+    <% end %>
+  </div>
+
+  <%= link_to "New list", new_list_path %>
+</div>
